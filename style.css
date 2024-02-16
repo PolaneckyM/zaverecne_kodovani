@@ -5,3 +5,41 @@
     max-width: 200px;
 }
 
+.headerWrapper{
+    height: 100%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.navig{
+    display: flex;
+    gap: 25px;
+
+}
+.menu{
+    height: 50px;
+    background-color: #7f2e2e;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+ul{
+    display: flex;
+    gap: 10px;
+}
