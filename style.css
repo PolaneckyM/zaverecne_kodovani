@@ -5,3 +5,177 @@
     max-width: 200px;
 }
 
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.welcome-img {
+    width: 100%;
+}
+
+.imgBurger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3vw;
+}
+
+.burger-img {
+
+    width: 80%;
+    height: 39vw;
+}
+
+.imgGT {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.ginton-img {
+
+    width: 48%;
+    height: 32vw;
+}
+
+
+
+.box1 { background-color: #FFD700; }
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+header{
+    width: 100%;
+    height: 75px;
+    background-color: #5e0f0f;
+}
+
+
+
+.menu-title-burgery{
+    margin: 1.5vw 0 2.5vw 0;
+}
+
+.menu-title-napoje{
+    margin: 1.5vw 0 2.5vw 0;
+}
+
+
+
+.main-wrapper{
+    width:100%;
+    padding: 50px, 0;
+    background-color: rgb(224, 224, 224);
+}
+
+main{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h1{
+    color: black;
+    text-align: center;
+}
+
+.content{
+    width: calc(100% - 5px);
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    padding-bottom: 35px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-color: #fbb03b;;
+}
+
+footer{
+    width: 100%;
+    background-color: #7f2e2e;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    padding: 30px 0;
+}
+
+.socialIcon {
+    padding: 8px;
+    padding-right: 2%;
+    align-self: flex-end;
+}
+
+.foot{
+    background-color: #b296c7;
+    grid-column: span 4;
+}
+
+.bars{
+    display: none;
+}
+
+
+.copyright{
+    margin-right: 50%
+}
+
+@media screen and (max-width: 1024px){
+    main{
+        flex-direction: column;
+    }
+    .foot{
+        grid-column: span 6;
+    }
+    .foot:nth-child(3){
+        grid-column: span 12;
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    
+    .box1{
+        grid-column: span 9;
+
+    }
+    .foot{
+        display: none;
+    }
+    .foot:nth-child(3){
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 360px){
+    
+    .box1{
+        grid-column: span 12;
+    }
+    
+
+    .foot{
+        display: none;
+    }
+    .foot:nth-child(3){
+        display: flex;
+    }
+}
+
+
+
+    
